@@ -51,10 +51,13 @@ nav ul li a:hover {
 
 /* Secção Principal / Hero */
 .hero {
-    background: linear-gradient(rgba(0, 51, 102, 0.7), rgba(0, 51, 102, 0.7)), url('../images/hero-bg.jpg') no-repeat center center/cover;
-    color: #fff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/Fundo-grande.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    padding: 80px 20px;
     text-align: center;
-    padding: 5rem 2rem;
 }
 
 .hero h2 {
@@ -112,22 +115,25 @@ footer {
 }
 
 .card-barco {
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transition: transform 0.3s ease;
 }
 
 .card-barco:hover {
-    transform: translateY(-5px);
+    transform: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 .card-barco img {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    background-color: #ddd; /* Fundo temporário enquanto não há imagens */
+    /* Garantir que a imagem também não sofre zoom/animação */
+    transform: none;
+}
+.card-barco img:hover {
+    transform: none;
 }
 
 .card-conteudo {
@@ -166,4 +172,14 @@ footer {
 
 .btn-card:hover {
     background-color: #4da6ff;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.site-logo {
+    height: 100px;
+    width: auto;
 }
