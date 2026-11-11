@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lake House Boats - Reservas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho e Navegação -->
+    <header>
+        <div class="logo-container">
+            <img src="images/Logotipo-LakeHouseBoats.png" alt="Logótipo Lake House Boats">
+            <h1>Lake House Boats</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="barcos.html">Barcos</a></li>
+                <li><a href="reservas.html" class="ativo">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal: Formulário de Reserva -->
+    <main>
+        <section class="reserva-sec">
+            <h2>Reserva a sua Embarcação</h2>
+            <p class="subtitulo-destaque">Preencha o formulário abaixo para solicitar a sua estadia a bordo.</p>
+
+            <form action="#" method="POST" class="form-reserva">
+                <div class="form-grupo">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Insira o seu nome">
+                </div>
+
+                <div class="form-grupo">
+                    <label for="email">Correio Eletrónico:</label>
+                    <input type="email" id="email" name="email" required placeholder="exemplo@dominio.com">
+                </div>
+
+                <div class="form-grupo">
+                    <label for="telefone">Número de Telemóvel:</label>
+                    <input type="tel" id="telefone" name="telefone" required placeholder="Ex: 912 345 678">
+                </div>
+
+                <div class="form-grupo">
+                    <label for="barco">Selecione o Barco:</label>
+                    <select id="barco" name="barco" required>
+                        <option value="" disabled selected>Escolha uma embarcação</option>
+                        <option value="veleiro">Veleiro Atlantic Star (150€ / noite)</option>
+                        <option value="catamara">Catamarã Horizon (220€ / noite)</option>
+                        <option value="iate">Iate Sunset Classic (180€ / noite)</option>
+                    </select>
+                </div>
+
+                <div class="form-linha">
+                    <div class="form-grupo">
+                        <label for="checkin">Data de Início (Check-in):</label>
+                        <input type="date" id="checkin" name="checkin" required>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="checkout">Data de Fim (Check-out):</label>
+                        <input type="date" id="checkout" name="checkout" required>
+                    </div>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="hospedes">Número de Hóspedes:</label>
+                    <input type="number" id="hospedes" name="hospedes" min="1" max="12" required placeholder="Ex: 4">
+                </div>
+
+                <button type="submit" class="btn-enviar">Confirmar Reserva</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 Lake House Boats. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
