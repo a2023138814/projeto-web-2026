@@ -3,7 +3,7 @@
 Trabalho prático desenvolvido no âmbito da unidade curricular de Aplicações Web do Instituto Superior de Contabilidade e Administração de Coimbra (ISCAC).
 
 Composição do Grupo
-* Tiago Alves — a2023138814
+* Tiago Alves — a2024136659
 * Maria Rita Carvalho Simões — a2023138814
 
 Descrição do Projeto
@@ -20,3 +20,5 @@ Estrutura de Ficheiros
 * `css/` - Ficheiros de estilos visuais
 * `js/` - Scripts de interatividade
 * `images/` - Recursos visuais e imagens dos barcos
+* `barcos.html` - Página dos barcos do website
+* `reservas.html`- Página de reservas do website
