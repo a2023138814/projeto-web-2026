@@ -1,3 +1,3 @@
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("Aplicação NavegaJá carregada com sucesso.");
+    console.log("Aplicação Lake House Boats carregada com sucesso.");
 });
